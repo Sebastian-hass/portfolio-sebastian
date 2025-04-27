@@ -1,0 +1,47 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+import Link from "./icons/Link.astro"
+const EXPERIENCE = [
+  {
+    date:"Agosto 2024 - Marzo 2025",
+    title: "Desarrollador Backend Junior - Scraping profesional en Python",
+    company: "Insumos Generales S.A. - Paraguay",
+    description:
+      "Desarrollo de un sistema de scraping para la recolección de datos de productos y precios de competidores. Implementación de técnicas avanzadas de scraping y análisis de datos.",
+    Link:"https://www.construex.com.py/exhibidores/insumos_generales_sa/productos/",
+  },
+  {
+    date: "Julio 2024",
+    title: "Desarrollador Full Stack",
+    company: "Proyecto Web para inmobiliaria - Paraguay- freelance",
+    description:
+      "Desarrollo completo del sitio web para una agencia de bienes raíces. Implementación de funcionalidades frontend y backend usando HTML, CSS, JavaScript y GitHub.",
+    link: "https://sebastian-hass.github.io/Web-Agente-inmobiliario/index.html",
+  },
+  {
+    date: "Junio 2024",
+    title: "Desarrollador Frontend",
+    company: "Proyecto tienda e-commerce - freelance",
+    description:
+      "Diseño e implementación de una tienda online para productos electrónicos. Enfocado en experiencia de usuario y buenas prácticas de desarrollo web.",
+    link: "https://sebastian-hass.github.io/Ejemplo1/",
+  },
+  {
+    date: "2024 - en curso",
+    title: "Estudiante de Desarrollo Full Stack",
+    company: "CEPIBASE Barcelona",
+    description:
+      "Formación intensiva en desarrollo web full stack, con enfoque en tecnologías modernas como Python, JavaScript, HTML, CSS y control de versiones con Git.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
