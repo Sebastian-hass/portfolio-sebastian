@@ -8,12 +8,18 @@ import Javascript from "./icons/javascript.astro"
 import Html from "./icons/html.astro"
 import CSS from "./icons/CSS1.astro"
 import Python from "./icons/python.astro"
+import React from "./icons/react.astro"
 
 const TAGS = {
   NEXT: {
     name: "Next.js",
     class: "bg-black text-white",
     icon: NextJS,
+  },
+  REACT: {
+    name: "React.js",
+    class: "bg-[#61DAFB] text-black",
+    icon: React,
   },
   TAILWIND: {
     name: "Tailwind CSS",
@@ -83,6 +89,15 @@ const PROJECTS = [
     github: "https://github.com/Sebastian-hass/Django_API.git",
     image: "/projects/Django-API.png",
     tags: [TAGS.PYTHON, TAGS.JAVASCRIPT, TAGS.CSS],
+  },
+  {
+    title: "React Movie App - Aplicación de películas con React",
+    description:
+      "Aplicación web construida con React.js que permite buscar películas por nombre utilizando la API de TMDB. Incluye una sección de favoritos gestionada con Context API y persistida en localStorage. Cuenta con diseño responsive y está desplegada en Vercel.",
+    link: "https://react-movie-app-virid-psi.vercel.app/",
+    github: "https://github.com/Sebastian-hass/react-movie-app.git",
+    image: "/projects/react-movie-project.png",
+    tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS],
   },
   {
     title: "Frontend website - un sitio web frontend con html, css y js para un agente inmobiliario",
