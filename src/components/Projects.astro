@@ -60,9 +60,27 @@ const TAGS = {
     name: "Plotly Python library",
     class: "text-white",
     icon: Python
+  },
+  NEAT: {
+    name: "NEAT Algorithm",
+    class: "bg-green-600 text-white",
+    icon: Python
+  },
+  PYGAME: {
+    name: "Pygame",
+    class: "bg-blue-600 text-white",
+    icon: Python
   }
 }
 const PROJECTS = [
+  {
+    title: "Flappy Bird AI con NEAT - Inteligencia Artificial que aprende a jugar Flappy Bird",
+    description:
+      "Implementación de una IA que aprende a jugar Flappy Bird usando el algoritmo NEAT (NeuroEvolution of Augmenting Topologies). La red neuronal recibe 3 entradas (posición Y del pájaro, distancia al hueco y distancia al borde inferior de tubería) y decide si saltar o no. Incluye entrenamiento con población de 20 individuos por generación, visualización en tiempo real del proceso de aprendizaje y interfaz web para demostración.",
+    github: "https://github.com/Sebastian-hass/flappi-bird_machine-learning",
+    image: "/projects/Flappy_bird_NEAT.png",
+    tags: [TAGS.PYTHON, TAGS.NEAT, TAGS.PYGAME]
+  },
   {
   title: "Simple Finance App - Dashboard interactivo de finanzas personales",
   description:
