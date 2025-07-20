@@ -34,18 +34,19 @@ Bienvenido a mi portfolio personal. Este proyecto resume quién soy como desarro
 ---
 
 ## 📁 Estructura del Proyecto
-portfolio-sebastian/
-├── public/ # Archivos estáticos (favicon, imágenes)
-├── src/
-│ ├── components/ # Componentes Astro y UI
-│ ├── layouts/ # Layout general del sitio
-│ ├── pages/ # Rutas del sitio
-│ ├── styles/ # Archivos de estilo
-│ └── data/ # Contenido de proyectos, skills, etc.
-├── astro.config.mjs
-├── tailwind.config.js
-├── tsconfig.json
-└── README.md
+
+  portfolio-sebastian/
+    ├── public/ # Archivos estáticos (favicon, imágenes)
+    ├── src/
+    │ ├── components/ # Componentes Astro y UI reutilizables
+    │ ├── layouts/ # Estructura general del sitio
+    │ ├── pages/ # Rutas del sitio (Inicio, Proyectos, etc.)
+    │ ├── styles/ # Estilos globales y personalizados
+    │ └── data/ # Datos de proyectos, skills, contacto, etc.
+    ├── astro.config.mjs # Configuración principal de Astro
+    ├── tailwind.config.js # Configuración de TailwindCSS
+    ├── tsconfig.json # Configuración de TypeScript
+    └── README.md # Documentación del proyecto
 
 ---
 
