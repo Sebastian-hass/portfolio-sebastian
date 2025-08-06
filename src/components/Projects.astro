@@ -70,7 +70,22 @@ const TAGS = {
     name: "Pygame",
     class: "bg-blue-600 text-white",
     icon: Python
-  }
+  },
+  TENSORFLOW: {
+  name: "TensorFlow Python library",
+  class: "bg-[#FF6F00] text-white",
+  icon: Python
+  },
+  NUMPY: {
+    name: "Numpy Python library",
+    class: "bg-[#013243] text-white", 
+    icon: Python
+  },
+  OBJECTDETECTIONAPI_TF: {
+    name: "Object Detection API de TensorFlow",
+    class: "bg-[#FFA000] text-black", 
+    icon: Python
+  },
 }
 const PROJECTS = [
   {
@@ -80,6 +95,14 @@ const PROJECTS = [
     github: "https://github.com/Sebastian-hass/flappi-bird_machine-learning",
     image: "/projects/Flappy_bird_NEAT.png",
     tags: [TAGS.PYTHON, TAGS.NEAT, TAGS.PYGAME]
+  },
+  {
+  title: "Detector de Lengua de Señas en Tiempo Real - Visión por Computadora con TensorFlow",
+  description:
+    "Proyecto completo que implementa un sistema de detección de lengua de señas en tiempo real usando la TensorFlow Object Detection API. Incluye flujo completo de trabajo: anotación, conversión de datos, entrenamiento, y detección en vivo por webcam.",
+  github: "https://github.com/Sebastian-hass/RealTimeSignLangugeDetection.git",
+  image: "/projects/sign_language_detector.webp", 
+  tags: [TAGS.PYTHON, TAGS.TENSORFLOW, TAGS.NUMPY, TAGS.OBJECTDETECTIONAPI_TF]
   },
   {
   title: "Simple Finance App - Dashboard interactivo de finanzas personales",
