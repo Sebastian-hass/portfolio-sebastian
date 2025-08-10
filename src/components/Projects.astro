@@ -28,22 +28,22 @@ const TAGS = {
   },
   JAVASCRIPT: {
     name: "JavaScript",
-    class: "bg-lightyellow text-white",
+    class: "bg-yellow-400 text-black",
     icon: Javascript,
   },
   HTML: {
     name: "HTML",
-    class: "bg-lightorange text-white",
+    class: "bg-orange-600 text-white",
     icon: Html,
   },
   CSS: {
     name:"CSS",
-    class: "bg-lightblue text-white",
+    class: "bg-blue-500 text-white",
     icon: CSS,
   },
   PYTHON: {
     name: "Python",
-    class: "bg-lightyellow text-white",
+    class: "bg-yellow-400 text-black",
     icon: Python,
   },
   STREAMLIT: {
@@ -86,6 +86,16 @@ const TAGS = {
     class: "bg-[#FFA000] text-black", 
     icon: Python
   },
+  XGBOOST: {
+    name: "XGBoost",
+    class: "bg-cyan-700 text-white",
+    icon: Python
+  },
+  YFINANCE: {
+    name: "yfinance",
+    class: "bg-gray-600 text-white",
+    icon: Python
+  },
 }
 const PROJECTS = [
   {
@@ -103,6 +113,15 @@ const PROJECTS = [
   github: "https://github.com/Sebastian-hass/RealTimeSignLangugeDetection.git",
   image: "/projects/sign_language_detector.webp", 
   tags: [TAGS.PYTHON, TAGS.TENSORFLOW, TAGS.NUMPY, TAGS.OBJECTDETECTIONAPI_TF]
+  },
+  {
+    title: "Predictor del S&P 500 con Machine Learning y Streamlit",
+    description:
+      "Modelo de Machine Learning (XGBoost) que predice la dirección diaria del índice S&P 500. El modelo se entrena con datos históricos enriquecidos con indicadores del mercado japonés y tasas de interés de EE. UU. Incluye un riguroso backtesting y una aplicación web interactiva construida con Streamlit para visualizar la predicción más reciente.",
+    link: "https://s-p500-prediction-ml-model-kqrumr9rtexixf7bfhvnga.streamlit.app/", 
+    github: "https://github.com/Sebastian-hass/S-P500-Prediction-ML-model.git",
+    image: "/projects/app_prediccionS&P500_ML.png",
+    tags: [TAGS.PYTHON, TAGS.XGBOOST, TAGS.PANDAS, TAGS.YFINANCE, TAGS.STREAMLIT]
   },
   {
   title: "Simple Finance App - Dashboard interactivo de finanzas personales",
