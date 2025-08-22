@@ -96,8 +96,36 @@ const TAGS = {
     class: "bg-gray-600 text-white",
     icon: Python
   },
+  FASTAPI: {
+    name: "FastAPI",
+    class: "bg-[#009688] text-white", // Color oficial de FastAPI
+    icon: Python, // Usa el ícono de Python ya que es un framework de Python
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#3178C6] text-white", // Color oficial de TypeScript
+    icon: Javascript, // Puedes crear un ícono específico o usar el de JS
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-[#336791] text-white", // Color oficial de PostgreSQL
+    icon: Python, // Placeholder, idealmente un ícono de base de datos
+  },
+  OPENAI: {
+    name: "OpenAI",
+    class: "bg-[#412991] text-white",
+    icon: Python, // Placeholder
+  },
 }
 const PROJECTS = [
+  {
+    title: "Café Demo SaaS - Plataforma White-Label para Restaurantes con IA",
+    description: "Solución SaaS completa para restaurantes con arquitectura full-stack (React/TypeScript + FastAPI/Python). Incluye despliegue automatizado en 45 min, IA con OpenAI para atención al cliente, panel de admin, sistema de pedidos y email marketing. Desplegado con CI/CD en Vercel y Render.",
+    link: "https://cafe-demo-livid.vercel.app/",
+    github: "https://github.com/Sebastian-hass/cafe-demo.git",
+    image: "/projects/cafe-demo.png",
+    tags: [TAGS.PYTHON, TAGS.FASTAPI, TAGS.REACT, TAGS.TYPESCRIPT, TAGS.POSTGRESQL, TAGS.OPENAI],
+  },
   {
     title: "Flappy Bird AI con NEAT - Inteligencia Artificial que aprende a jugar Flappy Bird",
     description:
